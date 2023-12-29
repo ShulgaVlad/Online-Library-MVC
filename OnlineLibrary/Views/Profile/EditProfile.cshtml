@@ -1,0 +1,62 @@
+﻿@model OnlineLibrary.Models.RegisteredReader
+<link rel="stylesheet" type="text/css" href="~/css/EditProfStyle.css">
+<div class="col-md-8">
+    <h1 class="edit">
+        Edit menu
+    </h1>
+    <div class="">
+        <div class="card-body">
+            <form asp-action="EditDoneProfile">
+                <input type="hidden" asp-for="id" />
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">First name</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <input name="newFirstName" class="form-control" asp-for="first_name" />
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Surname</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <input name="newSurname" class="form-control" asp-for="surname" />
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">E-mail</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <input name="newEmail" class="form-control" asp-for="e_mail" />
+                    </div>
+                </div>
+                <hr>
+                <h6 class="mb-1">Not neccessary fields</h6>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Faculty</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <input name="newFaculty" class="form-control" asp-for="faculty" />
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Specialty</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <input name="newSpecialty" class="form-control" asp-for="specialty" />
+                    </div>
+                </div>
+                <hr>
+                <button id="edit-submit" type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+    </div>
+</div>

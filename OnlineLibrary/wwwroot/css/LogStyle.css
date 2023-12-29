@@ -1,0 +1,17 @@
+﻿.col-md-4 {
+    width: 35%;
+}
+
+.row {
+    margin-top: 180px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.login {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}

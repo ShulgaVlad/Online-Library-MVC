@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = OnlineLibrary
+build_property.RootNamespace = OnlineLibrary
+build_property.ProjectDir = I:\ООКП\lab2(2)\OnlineLibrary\OnlineLibrary\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = I:\ООКП\lab2(2)\OnlineLibrary\OnlineLibrary
+build_property._RazorSourceGeneratorDebug = 
+
+[I:/ООКП/lab2(2)/OnlineLibrary/OnlineLibrary/Views/Books/AddingNewBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcQWRkaW5nTmV3Qm9vay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/ООКП/lab2(2)/OnlineLibrary/OnlineLibrary/Views/Books/AdminBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcQWRtaW5Cb29rcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/ООКП/lab2(2)/OnlineLibrary/OnlineLibrary/Views/Books/EditBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcRWRpdEJvb2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/ООКП/lab2(2)/OnlineLibrary/OnlineLibrary/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/ООКП/lab2(2)/OnlineLibrary/OnlineLibrary/Views/Login/AdminLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQWRtaW5Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/ООКП/lab2(2)/OnlineLibrary/OnlineLibrary/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/ООКП/lab2(2)/OnlineLibrary/OnlineLibrary/Views/Profile/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxFZGl0UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/ООКП/lab2(2)/OnlineLibrary/OnlineLibrary/Views/Profile/HistoryOfReadBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxIaXN0b3J5T2ZSZWFkQm9va3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/ООКП/lab2(2)/OnlineLibrary/OnlineLibrary/Views/Profile/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/ООКП/lab2(2)/OnlineLibrary/OnlineLibrary/Views/Registration/Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXFJlZ2lzdHJhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/ООКП/lab2(2)/OnlineLibrary/OnlineLibrary/Views/Shared/Books.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEJvb2tzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/ООКП/lab2(2)/OnlineLibrary/OnlineLibrary/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/ООКП/lab2(2)/OnlineLibrary/OnlineLibrary/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/ООКП/lab2(2)/OnlineLibrary/OnlineLibrary/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/ООКП/lab2(2)/OnlineLibrary/OnlineLibrary/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/ООКП/lab2(2)/OnlineLibrary/OnlineLibrary/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ftl85q4llx

@@ -1,0 +1,71 @@
+﻿table, th, td {
+    border: 1px solid black;
+}
+
+.books {
+    background-color: #d9e0ee;
+}
+
+.columnname1, .columnname2, .columnname3, .columnname4, .columnname5, .columnname6, .columnname7{
+    position:relative;
+    text-align:center;
+}
+
+.rowname1, .rowname2, .rowname3, .rowname5, .rowname6, .rowname7{
+    position: relative;
+    text-align: center;
+}
+
+.columnname5 {
+    width: 70px;
+}
+
+.columnname7 {
+    width: 100px;
+}
+
+.columnname6{
+    width: 70px;
+}
+
+.btn{ 
+    display:inline-block;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+}
+
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.rowname8 {
+    position: relative;
+    text-align: center;
+}
+
+.DeleteButton {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: red;
+    border-color: red;
+    color: white;
+}
+
+.DeleteButton:hover {
+    background-color: #a62b37;
+    border-color: #a62b37;
+}
+
+.AddBook {
+    position: relative;
+    text-align: right;
+    margin-bottom:10px;
+}
+
+

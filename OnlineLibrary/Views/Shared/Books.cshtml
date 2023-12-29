@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Book>
+@using OnlineLibrary.Controllers
+<link rel="stylesheet" type="text/css" href="~/css/BooksStyle.css">
+
+<div class="class">
+<h1 class="title">Books</h1>
+<div class="books">
+<table>
+    <thead>
+        <form asp-action="SortByName" asp-controller="Books">
+        </form>
+                
+        <tr>
+            <th class="columnname1">Title</th>
+            <th class="columnname2">Author</th>
+            <th class="columnname3">Book genre</th>
+            <th class="columnname4">Short dicription</th>
+            <th class="columnname5">Rating</th>
+            <th class="columnname7">Read it!</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td class="rowname1">@book.book_name</td>
+                <td class="rowname2">@book.author</td>
+                <td class="rowname3">@book.book_genre</td>
+                <td class="rowname4">@book.short_dicription</td>
+                <td class="rowname5">@book.rating</td>
+                <td class="rowname7">
+                    <form class="rowname7" asp-action="AddedToRead" asp-controller="Books" method="post">
+                        <input type="hidden" name="bookId" value="@book.id" />
+                        <input type="hidden" name="readerId" value="@ProfileController.RegisteredReader.id"  />
+                        <input type="submit" class="btn btn-primary read-button" data-id="@book.id" name="newBookRead" value="Read" />
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>
+</div>

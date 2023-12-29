@@ -1,0 +1,22 @@
+﻿.EditButton{
+    width:100px;
+    height:40px;
+    border-radius:5px;
+}
+
+.DeleteButton {
+    position: relative;
+    display: inline-block;
+    margin-left: 100px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: red;
+    border-color: red;
+    color: white;
+}
+
+.DeleteButton:hover {
+    background-color: #a62b37;
+    border-color: #a62b37;
+}

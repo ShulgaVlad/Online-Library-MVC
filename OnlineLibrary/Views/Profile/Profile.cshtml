@@ -1,0 +1,109 @@
+﻿@using OnlineLibrary.Controllers
+@{
+    ViewBag.Title = "Profile";
+    Layout = "_Layout";
+}
+
+<link rel="stylesheet" href="~/css/ProfileStyle.css" />
+@{
+    var pass = ProfileController.RegisteredReader.password;
+    string pass_length = " ";
+    for (int i = 0; i < pass.Length; i++)
+    {
+        pass_length += '*';
+    }
+}
+<style>
+    
+
+    
+</style>
+@if (ProfileController.RegisteredReader != null)
+{
+    <div class="container-fluid">
+        <h2 class="mt-5">Hi, @ProfileController.RegisteredReader.first_name</h2>
+
+        <div class="d-flex flex-row">
+            <ul class="nav nav-tabs flex-column" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#Profile" aria-selected="true" role="tab">My Profile</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" data-bs-toggle="tab" href="#History" aria-selected="false" role="tab" tabindex="-1">History</a>
+                </li>
+            </ul>
+
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade show active" style="margin-left: 50px;" id="Profile" role="tabpanel">
+                    <table class="table table-hover">
+                        <tr>    
+                            <form asp-controller="Profile" method="post">
+                                <td>Name:</td>
+                                <td>@ProfileController.RegisteredReader.first_name</td>
+                            </form>                            
+                        </tr>
+                        <tr>
+                            <form asp-controller="Profile" method="post">
+                                <td>Surname:</td>
+                                <td>@ProfileController.RegisteredReader.surname</td>
+                            </form>
+                        </tr>
+                        <tr>
+                            <form asp-controller="Profile" method="post">
+                                <td>E-mail:</td>
+                                <td>@ProfileController.RegisteredReader.e_mail</td>
+                            </form>
+                        </tr>
+                        <tr>
+                            <form asp-controller="Profile" method="post">
+                            <td>Faculty:</td>
+                            <td type="password">@ProfileController.RegisteredReader.faculty</td>
+                            </form>
+                        </tr>
+                        <tr>
+                            <form asp-controller="Profile" method="post">
+                            <td>Specialty:</td>
+                            <td type="password">@ProfileController.RegisteredReader.specialty</td>
+                            </form>
+                        </tr>
+                        <tr>
+                            <form asp-controller="Profile" method="post">
+                                <td>Password:</td>
+                                <td type="password">@pass_length</td>
+                            </form>
+                        </tr>
+                    </table>
+                    <table class="btnblock">                    
+                            <tr>
+                                @using (Html.BeginForm("EditProfile", "Profile"))
+                                {
+                                    <td><input class="EditButton btn-primary" type="submit" value="Edit" /></td>
+                                }
+                                <form asp-controller="Profile" asp-action="DeleteProfile" method="post">
+                                    <td>
+                                        <input class="DeleteButton" style="" type="submit" value="Delete" />
+                                    </td>
+                                </form>
+                            </tr>                        
+                    </table>
+                </div>
+
+                <div class="tab-pane fade" style="margin-left: 50px;" id="History" role="tabpanel">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <form asp-controller="Profile" asp-action="HistoryOfReadBooks" method="post">
+                                    <button type="submit" class="btn btn-primary">Open history of read books</button>
+                                </form>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p class="notlogged">There is no user logged in.</p>
+}

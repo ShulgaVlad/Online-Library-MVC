@@ -1,0 +1,42 @@
+﻿@model OnlineLibrary.Models.BooksAndReaders
+
+<link rel="stylesheet" type="text/css" href="~/css/ReadBooks.css">
+
+
+<div class="class">
+<h1 class="title">Your history of read books</h1>
+<table class="historyofreadbooks">
+    <thead>
+        <tr>
+            <th class="columnname1">Id</th>
+            <th class="columnname2">Reader Id</th>
+            <th class="columnname3">Book Id</th>
+            <th class="columnname4">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model.hisofreadlist)
+        {
+        var bookexist = Model.bookforhislist.FirstOrDefault(d => d.id == book.Books.id);
+            if (bookexist != null)
+            {
+                <tr>
+                    <td class="rowname1">@book.Books.book_name</td>
+                    <td class="rowname2">@book.Books.author</td>
+                    <td class="rowname3">@book.Books.book_genre</td>
+                    <td class ="rowname4">
+                        <form asp-action="BookinhistoryDelete" asp-controller="Profile" method="post">
+                            <input type="hidden" name="bookId" value="@book.id" />
+                            <input type="submit" class="DeleteButton" data-id="@book.id" value="Delete" />
+                        </form>
+                    </td>
+                </tr>
+            }
+            else
+            {
+                <p>Книги ще не були додані!</p>
+            }
+        }
+        
+</tbody>
+</table>

@@ -1,0 +1,58 @@
+﻿@model OnlineLibrary.Models.Book
+
+<h1>Edit Book</h1>
+
+<hr />
+<form asp-action="EditBook">
+    @{
+        var bookId = TempData["BookId"];
+        int converted = Convert.ToInt32(bookId);
+}
+    <input type="hidden" asp-for="id" value="@converted"/>
+    <div class="row">
+        <div class="col-sm-3">
+            <h6 class="mb-0">Book name: </h6>
+        </div>
+        <div class="col-sm-9 text-secondary">
+            <input name="newBookName" class="form-control" asp-for="book_name" />
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-3">
+            <h6 class="mb-0">Author: </h6>
+        </div>
+        <div class="col-sm-9 text-secondary">
+            <input name="newAuthor" class="form-control" asp-for="author" />
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-3">
+            <h6 class="mb-0">Book genre: </h6>
+        </div>
+        <div class="col-sm-9 text-secondary">
+            <input name="newGenre" class="form-control" asp-for="book_genre" />
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-sm-3">
+            <h6 class="mb-0">Short discription: </h6>
+        </div>
+        <div class="col-sm-9 text-secondary">
+            <input name="newDiscription" class="form-control" asp-for="short_dicription" />
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-3">
+            <h6 class="mb-0">Rating: </h6>
+        </div>
+        <div class="col-sm-9 text-secondary">
+            <input name="newRating" class="form-control" asp-for="rating" />
+        </div>
+    </div>
+    <hr>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
